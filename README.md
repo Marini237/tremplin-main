@@ -42,7 +42,7 @@ Le projet a été réalisé sous la forme d’une application **Next.js** avec u
 
 <img width="1856" height="526" alt="Image" src="https://github.com/user-attachments/assets/ecd6c873-10e5-4971-8d52-87e6b583e5fd" />
 
-https://github.com/user-attachments/assets/8608dcdd-84d1-4707-a787-043282238559
+<img width="1280" height="720" alt="Image" src="https://github.com/user-attachments/assets/5f4a74f7-d73c-429c-a426-093e62029888" />
 ---
 
 ## Stack technique & choix
