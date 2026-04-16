@@ -35,7 +35,8 @@ Le projet a été réalisé sous la forme d’une application **Next.js** avec u
 ---
 
 ## Captures d’écran
-<img width="1280" height="720" alt="Image" src="https://github.com/user-attachments/assets/f1297e20-932d-4323-af0b-b0185278e6fa" />
+
+https://github.com/user-attachments/assets/8608dcdd-84d1-4707-a787-043282238559
 ---
 
 ## Stack technique & choix
