@@ -35,7 +35,7 @@ Le projet a été réalisé sous la forme d’une application **Next.js** avec u
 ---
 
 ## Captures d’écran
-
+<!-- Uploading "2026-04-16 17-53-39.gif"... -->
 
 ---
 
