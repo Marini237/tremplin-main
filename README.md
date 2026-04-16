@@ -36,13 +36,19 @@ Le projet a été réalisé sous la forme d’une application **Next.js** avec u
 
 ## Captures d’écran
 
+
 <img width="1813" height="965" alt="Image" src="https://github.com/user-attachments/assets/fedca537-7f10-4fb9-ba89-2ac5066aafbb" />
+
 
 <img width="1472" height="583" alt="Image" src="https://github.com/user-attachments/assets/0d08d973-9e51-45f5-b453-50a5d34d0c7a" />
 
+
 <img width="1856" height="526" alt="Image" src="https://github.com/user-attachments/assets/ecd6c873-10e5-4971-8d52-87e6b583e5fd" />
 
+
 <img width="1280" height="720" alt="Image" src="https://github.com/user-attachments/assets/5f4a74f7-d73c-429c-a426-093e62029888" />
+
+
 ---
 
 ## Stack technique & choix
