@@ -1,26 +1,255 @@
-@import "tailwindcss";
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  background: #efefef;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 32px;
+}
+
+.contact-card {
+  width: 100%;
+  max-width: 1400px;
+  min-height: 720px;
+  border-radius: 28px;
+  background-image: linear-gradient(rgba(70, 45, 25, 0.35), rgba(70, 45, 25, 0.35)),
+    url("/salon.png");
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+  padding: 40px 46px;
+}
+
+.title {
+  margin: 0;
+  color: white;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.form-grid {
+  margin-top: 44px;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 56px;
+}
+
+.left-column,
+.right-column {
+  width: 100%;
+}
+
+.section-title {
+  margin: 0 0 28px;
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.radio-row {
+  display: flex;
+  gap: 28px;
+  flex-wrap: wrap;
+}
+
+.radio-row--message {
+  gap: 22px;
+}
+
+.radio-option {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.radio-option input {
+  margin: 0;
+  accent-color: white;
+}
+.contact-fields {
+  margin-top: 18px;
+}
+
+.name-row {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 12px;
+}
+
+.form-input {
+  height: 46px;
+  border: none;
+  outline: none;
+  border-radius: 999px;
+  padding: 0 20px;
+  background: rgba(255, 255, 255, 0.92);
+  color: #7d7d7d;
+  font-size: 15px;
+}
+
+.form-input::placeholder {
+  color: #b1b1b1;
+}
+
+.half-input {
+  width: 100%;
+}
+
+.full-input {
+  width: 100%;
+  display: block;
+  margin-bottom: 12px;
+}
+.message-box {
+  margin-top: 18px;
+}
+
+.message-textarea {
+  width: 100%;
+  min-height: 180px;
+  border: none;
+  outline: none;
+  resize: none;
+  border-radius: 28px;
+  padding: 22px 20px;
+  background: rgba(255, 255, 255, 0.92);
+  color: #7d7d7d;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.message-textarea::placeholder {
+  color: #b1b1b1;
+}
+.availability-section {
+  margin-top: 34px;
+}
+
+.availability-title {
+  margin: 0 0 28px;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.availability-controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.availability-select {
+  height: 42px;
+  border: none;
+  outline: none;
+  border-radius: 999px;
+  padding: 0 18px;
+  background: rgba(255, 255, 255, 0.92);
+  color: #8f8f8f;
+  font-size: 14px;
+  appearance: none;
+}
+
+.day-select {
+  min-width: 120px;
+}
+
+.small-select {
+  min-width: 74px;
+}
+
+.add-button {
+  height: 42px;
+  border: none;
+  border-radius: 999px;
+  padding: 0 18px;
+  background: #5b2fc9;
+  color: white;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.availability-tags {
+  margin-top: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.availability-tag {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.78);
+  color: #9a9a9a;
+  font-size: 13px;
+}
+
+.tag-remove {
+  border: none;
+  background: transparent;
+  color: #8a8a8a;
+  font-size: 16px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0;
+}
+.submit-row {
+  margin-top: 22px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.submit-button {
+  min-width: 210px;
+  height: 48px;
+  border: none;
+  border-radius: 999px;
+  background: #f5ad19;
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.feedback-message {
+  margin: 14px 0 0;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.feedback-success {
+  color: #ffffff;
+}
+
+.feedback-error {
+  color: #ffd7d7;
+}
+
+.submit-button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
 }

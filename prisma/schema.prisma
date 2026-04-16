@@ -1,0 +1,29 @@
+generator client {
+   provider = "prisma-client-js"
+   output   = "../app/generated/prisma"
+}
+
+datasource db {
+  provider = "mysql"
+}
+
+model ContactRequest {
+  id             Int            @id @default(autoincrement())
+  civilite       String
+  nom            String
+  prenom         String
+  email          String
+  telephone      String?
+  messageType    String
+  message        String
+  createdAt      DateTime       @default(now())
+  availabilities Availability[]
+}
+
+model Availability {
+  id               Int            @id @default(autoincrement())
+  dateLabel        String
+  timeRange        String
+  contactRequestId Int
+  contactRequest   ContactRequest @relation(fields: [contactRequestId], references: [id], onDelete: Cascade)
+}
